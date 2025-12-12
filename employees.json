@@ -1,0 +1,362 @@
+[
+  {
+    "_id": "d6d206e5-2ca4-443d-8404-dc05284e2d15",
+    "isRemoteWork": true,
+    "user_avatar": "luffy.webp",
+    "first_name": "Luffy",
+    "last_name": "Monkey",
+    "first_native_name": "Luffy",
+    "last_native_name": "Monkey",
+    "middle_native_name": "D.",
+    "department": "Web & Mobile",
+    "building": "Pilsudskiego 69 (Poland)",
+    "room": "1404",
+    "date_birth": {
+      "year": 1901,
+      "month": 1,
+      "day": 1
+    },
+    "desk_number": 20,
+    "manager": {
+      "id": "987ff8cb-b506-4d5e-9166-ab8c644bb891",
+      "first_name": "John",
+      "last_name": "Snow"
+    },
+    "phone": "+12931293129",
+    "email": "luffy.monkey@leverx.com",
+    "skype": "live:.cid.21asd41jd1m132",
+    "cnumber": "C5336116",
+    "citizenship": "Georgia",
+    "visa": [
+      {
+        "issuing_country": "Poland",
+        "type": "National visa type D",
+        "start_date": 1652158800000,
+        "end_date": 1683608400000
+      }
+    ],
+    "user_name": "luffy.monkey",
+    "password": "$2b$10$f7T2dl5IHjC1sMZMdqkkLeFo370Rr93U6IektRzRjtsp87CVrYicG",
+    "role": "Admin"
+  },
+  {
+    "_id": "a1b2c3d4-e5f6-4g7h-8i9j-0k1l2m3n4o5p",
+    "isRemoteWork": false,
+    "user_avatar": "lula.webp",
+    "first_name": "Lula",
+    "last_name": "Aguilar",
+    "first_native_name": "Lula",
+    "last_native_name": "Aguilar",
+    "middle_native_name": "",
+    "department": "Backend",
+    "building": "Pilsudskiego 69 (Poland)",
+    "room": "1405",
+    "date_birth": {
+      "year": 1995,
+      "month": 11,
+      "day": 11
+    },
+    "desk_number": 21,
+    "manager": {
+      "id": "987ff8cb-b506-4d5e-9166-ab8c644bb891",
+      "first_name": "John",
+      "last_name": "Snow"
+    },
+    "phone": "+12931293130",
+    "email": "zoro.roronoa@leverx.com",
+    "skype": "live:.cid.22asd41jd1m132",
+    "cnumber": "C5336117",
+    "citizenship": "Japan",
+    "visa": [
+      {
+        "issuing_country": "Poland",
+        "type": "National visa type D",
+        "start_date": 1652158800000,
+        "end_date": 1683608400000
+      }
+    ],
+    "user_name": "zoro.roronoa",
+    "password": "$2b$10$cicE25t6PYi6JlEMAwxmfuDMgwgjIqD6gyZu94.OLnk2wFzAKPVd6",
+    "role": "Admin"
+  },
+  {
+    "_id": "b2c3d4e5-f6g7-4h8i-9j0k-1l2m3n4o5p6q",
+    "isRemoteWork": true,
+    "user_avatar": "suzanne.webp",
+    "first_name": "Suzanne",
+    "last_name": "Taylor",
+    "first_native_name": "Suzanne",
+    "last_native_name": "Taylor",
+    "middle_native_name": "",
+    "department": "Frontend",
+    "building": "Pilsudskiego 70 (Poland)",
+    "room": "2001",
+    "date_birth": {
+      "year": 1994,
+      "month": 7,
+      "day": 3
+    },
+    "desk_number": 22,
+    "manager": {
+      "id": "987ff8cb-b506-4d5e-9166-ab8c644bb891",
+      "first_name": "John",
+      "last_name": "Snow"
+    },
+    "phone": "+12931293131",
+    "email": "suzanne.orange@leverx.com",
+    "skype": "live:.cid.23asd41jd1m132",
+    "cnumber": "C5336118",
+    "citizenship": "Japan",
+    "visa": [
+      {
+        "issuing_country": "Poland",
+        "type": "National visa type D",
+        "start_date": 1652158800000,
+        "end_date": 1683608400000
+      }
+    ],
+    "user_name": "suzanne.orange",
+    "password": "$2b$10$m/vnVmXRnwtDB8TGxZGaU.vje39XLVC9/YRBuDjjRCJKeyzVYILkm",
+    "role": "Employee"
+  },
+  {
+    "_id": "c3d4e5f6-g7h8-4i9j-0k1l-2m3n4o5p6q7r",
+    "isRemoteWork": false,
+    "user_avatar": "fintan.webp",
+    "first_name": "Fintan",
+    "last_name": "Cruz",
+    "first_native_name": "Fintan",
+    "last_native_name": "Cruz",
+    "middle_native_name": "",
+    "department": "QA",
+    "building": "Pilsudskiego 69 (Poland)",
+    "room": "1406",
+    "date_birth": {
+      "year": 1996,
+      "month": 4,
+      "day": 1
+    },
+    "desk_number": 23,
+    "manager": {
+      "id": "987ff8cb-b506-4d5e-9166-ab8c644bb891",
+      "first_name": "John",
+      "last_name": "Snow"
+    },
+    "phone": "+12931293132",
+    "email": "fintan.cruz@leverx.com",
+    "skype": "live:.cid.24asd41jd1m132",
+    "cnumber": "C5336119",
+    "citizenship": "Japan",
+    "visa": [
+      {
+        "issuing_country": "Poland",
+        "type": "National visa type D",
+        "start_date": 1652158800000,
+        "end_date": 1683608400000
+      }
+    ],
+    "user_name": "fintan.cruz",
+    "password": "$2b$10$Iob/P0FhO12HtnxUjoOaq.vPm.i6uBbaOyJe9cKb3lwKnN/HwJCQW",
+    "role": "Employee"
+  },
+  {
+    "_id": "d4e5f6g7-h8i9-4j0k-1l2m-3n4o5p6q7r8s",
+    "isRemoteWork": true,
+    "user_avatar": "brendana.webp",
+    "first_name": "Brendana",
+    "last_name": "Krueger",
+    "first_native_name": "Brendana",
+    "last_native_name": "Krueger",
+    "middle_native_name": "",
+    "department": "DevOps",
+    "building": "Pilsudskiego 70 (Poland)",
+    "room": "2002",
+    "date_birth": {
+      "year": 1992,
+      "month": 3,
+      "day": 2
+    },
+    "desk_number": 24,
+    "manager": {
+      "id": "987ff8cb-b506-4d5e-9166-ab8c644bb891",
+      "first_name": "John",
+      "last_name": "Snow"
+    },
+    "phone": "+12931293133",
+    "email": "brendana.krueger@leverx.com",
+    "skype": "live:.cid.25asd41jd1m132",
+    "cnumber": "C5336120",
+    "citizenship": "Japan",
+    "visa": [
+      {
+        "issuing_country": "Poland",
+        "type": "National visa type D",
+        "start_date": 1652158800000,
+        "end_date": 1683608400000
+      }
+    ],
+    "user_name": "brendana.krueger",
+    "password": "$2b$10$GBjj9M6WaUVnR35qTsp3DuZmBN9xfMgIIbtBy1EVqeL5Fgn/12nIe",
+    "role": "HR"
+  },
+  {
+    "_id": "e5f6g7h8-i9j0-4k1l-2m3n-4o5p6q7r8s9t",
+    "isRemoteWork": false,
+    "user_avatar": "luis.webp",
+    "first_name": "Luis",
+    "last_name": "Baker",
+    "first_native_name": "Luis",
+    "last_native_name": "Baker",
+    "middle_native_name": "",
+    "department": "Web & Mobile",
+    "building": "Pilsudskiego 69 (Poland)",
+    "room": "1407",
+    "date_birth": {
+      "year": 1997,
+      "month": 12,
+      "day": 24
+    },
+    "desk_number": 25,
+    "manager": {
+      "id": "987ff8cb-b506-4d5e-9166-ab8c644bb891",
+      "first_name": "John",
+      "last_name": "Snow"
+    },
+    "phone": "+12931293134",
+    "email": "luis.baker@leverx.com",
+    "skype": "live:.cid.26asd41jd1m132",
+    "cnumber": "C5336121",
+    "citizenship": "Japan",
+    "visa": [
+      {
+        "issuing_country": "Poland",
+        "type": "National visa type D",
+        "start_date": 1652158800000,
+        "end_date": 1683608400000
+      }
+    ],
+    "user_name": "luis.baker",
+    "password": "$2b$10$UV.38WcpjpRbwE0/ucgQSOJ5Y7xMPsxsVovbVIKzWrv4kBplTXSou",
+    "role": "Employee"
+  },
+  {
+    "_id": "f6g7h8i9-j0k1-4l2m-3n4o-5p6q7r8s9t0u",
+    "isRemoteWork": true,
+    "user_avatar": "jodie.webp",
+    "first_name": "Jodie",
+    "last_name": "Foster",
+    "first_native_name": "Jodie",
+    "last_native_name": "Foster",
+    "middle_native_name": "",
+    "department": "Backend",
+    "building": "Pilsudskiego 70 (Poland)",
+    "room": "2003",
+    "date_birth": {
+      "year": 1990,
+      "month": 2,
+      "day": 6
+    },
+    "desk_number": 26,
+    "manager": {
+      "id": "987ff8cb-b506-4d5e-9166-ab8c644bb891",
+      "first_name": "John",
+      "last_name": "Snow"
+    },
+    "phone": "+12931293135",
+    "email": "Jodie.Foster@leverx.com",
+    "skype": "live:.cid.27asd41jd1m132",
+    "cnumber": "C5336122",
+    "citizenship": "Japan",
+    "visa": [
+      {
+        "issuing_country": "Poland",
+        "type": "National visa type D",
+        "start_date": 1652158800000,
+        "end_date": 1683608400000
+      }
+    ],
+    "user_name": "Jodie.Foster",
+    "password": "$2b$10$ZWUWDoUPgTol/07diyK7SuCuL.0yb5Iajr8bmQK5tZoxXGa1dNDLS",
+    "role": "HR"
+  },
+  {
+    "_id": "g7h8i9j0-k1l2-4m3n-4o5p-6q7r8s9t0u1v",
+    "isRemoteWork": false,
+    "user_avatar": "arman.webp",
+    "first_name": "Arman",
+    "last_name": "Eaton",
+    "first_native_name": "Arman",
+    "last_native_name": "Eaton",
+    "middle_native_name": "",
+    "department": "Frontend",
+    "building": "Pilsudskiego 69 (Poland)",
+    "room": "1408",
+    "date_birth": {
+      "year": 1988,
+      "month": 3,
+      "day": 9
+    },
+    "desk_number": 27,
+    "manager": {
+      "id": "987ff8cb-b506-4d5e-9166-ab8c644bb891",
+      "first_name": "John",
+      "last_name": "Snow"
+    },
+    "phone": "+12931293136",
+    "email": "arman.eaton@leverx.com",
+    "skype": "live:.cid.28asd41jd1m132",
+    "cnumber": "C5336123",
+    "citizenship": "Japan",
+    "visa": [
+      {
+        "issuing_country": "Poland",
+        "type": "National visa type D",
+        "start_date": 1652158800000,
+        "end_date": 1683608400000
+      }
+    ],
+    "user_name": "arman.eaton",
+    "password": "$2b$10$R3ZrXTjv5x1g.5dcF17lV.btVcJC/ho33hNeiAlFxqBWIMDHnuix6",
+    "role": "Admin"
+  },
+  {
+    "_id": "h8i9j0k1-l2m3-4n4o-5p6q-7r8s9t0u1v2w",
+    "isRemoteWork": true,
+    "user_avatar": "francesca.webp",
+    "first_name": "Francesca",
+    "last_name": "Reed",
+    "first_native_name": "Francesca",
+    "last_native_name": "Humming",
+    "middle_native_name": "",
+    "department": "QA",
+    "building": "Pilsudskiego 70 (Poland)",
+    "room": "2004",
+    "date_birth": {
+      "year": 1991,
+      "month": 4,
+      "day": 3
+    },
+    "desk_number": 28,
+    "manager": {
+      "id": "987ff8cb-b506-4d5e-9166-ab8c644bb891",
+      "first_name": "John",
+      "last_name": "Snow"
+    },
+    "phone": "+12931293137",
+    "email": "francesca.reed@leverx.com",
+    "skype": "live:.cid.29asd41jd1m132",
+    "cnumber": "C5336124",
+    "citizenship": "Japan",
+    "visa": [
+      {
+        "issuing_country": "Poland",
+        "type": "National visa type D",
+        "start_date": 1652158800000,
+        "end_date": 1683608400000
+      }
+    ],
+    "user_name": "francesca.reed",
+    "password": "$2b$10$iK6mxq6/Toegs0FzPY6h3OsgttYN1.hYo.MW3LfAmDeAP0WLCvA/K",
+    "role": "Admin"
+  }
+]

@@ -1,12 +1,11 @@
 const http = require("http");
 const fs = require("fs");
 const bcrypt = require("bcrypt");
-const { log } = require("console");
 
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
 function getUsers() {
-  const data = fs.readFileSync("./users.json");
+  const data = fs.readFileSync("./employees.json");
   return JSON.parse(data);
 }
 
@@ -26,14 +25,10 @@ function parseBody(req) {
 
 const server = http.createServer(async (req, res) => {
   res.setHeader("Content-Type", "application/json");
-  res.setHeader("Access-control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Origin", "*");
 
   if (req.method === "GET" && req.url === "/users") {
-    const users = getUsers().map((u) => ({
-      id: u.id,
-      name: u.name,
-      password: u.password,
-    }));
+    const users = getUsers();
     console.log(users);
     return res.end(JSON.stringify(users));
   }
@@ -69,7 +64,7 @@ const server = http.createServer(async (req, res) => {
 
       const users = getUsers();
 
-      const user = users.find((u) => u.username === username);
+      const user = users.find((u) => u.first_name === username);
 
       console.log();
       console.log(username, password);
@@ -78,20 +73,24 @@ const server = http.createServer(async (req, res) => {
 
       if (!user) {
         res.statusCode = 401;
-        return res.end(JSON.stringify({ message: "Invalid username" }));
+        return res.end(
+          JSON.stringify({ message: "Invalid username", body: {} })
+        );
       }
 
       const isValid = await bcrypt.compare(password, user.password);
 
       if (!isValid) {
         res.statusCode = 401;
-        return res.end(JSON.stringify({ message: "Wrong password" }));
+        return res.end(JSON.stringify({ message: "Wrong password", body: {} }));
       }
 
-      return res.end(JSON.stringify({ message: "Sign-in successful" }));
+      return res.end(
+        JSON.stringify({ message: "Sign-in successful", body: user })
+      );
     } catch (error) {
       res.statusCode = 400;
-      return res.end(JSON.stringify({ message: error }));
+      return res.end(JSON.stringify({ message: error, body: {} }));
     }
   }
 
