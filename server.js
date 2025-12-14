@@ -27,9 +27,9 @@ const server = http.createServer(async (req, res) => {
   res.setHeader("Content-Type", "application/json");
   res.setHeader("Access-Control-Allow-Origin", "*");
 
+  // GET /users
   if (req.method === "GET" && req.url === "/users") {
     const users = getUsers();
-    console.log(users);
     return res.end(JSON.stringify(users));
   }
 
@@ -40,7 +40,7 @@ const server = http.createServer(async (req, res) => {
     const users = getUsers();
     // bcrypt logic must added to get user
 
-    const user = users.find((u) => +u.id === +id);
+    const user = users.find((u) => u._id === id);
 
     if (!user) {
       res.statusCode = 404;
@@ -48,11 +48,7 @@ const server = http.createServer(async (req, res) => {
     }
 
     return res.end(
-      JSON.stringify({
-        id: user.id,
-        name: user.name,
-        password: user.password,
-      })
+      JSON.stringify(user)
     );
   }
 
