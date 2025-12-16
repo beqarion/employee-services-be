@@ -9,6 +9,8 @@ function getUsers() {
   return JSON.parse(data);
 }
 
+const users = getUsers();
+
 function parseBody(req) {
   return new Promise((resolve, reject) => {
     let body = "";
@@ -26,19 +28,23 @@ function parseBody(req) {
 const server = http.createServer(async (req, res) => {
   res.setHeader("Content-Type", "application/json");
   res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PATCH, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
+  // Handle preflight requests
+  if (req.method === "OPTIONS") {
+    res.statusCode = 200;
+    return res.end();
+  }
 
   // GET /users
   if (req.method === "GET" && req.url === "/users") {
-    const users = getUsers();
     return res.end(JSON.stringify(users));
   }
 
   // GET /users/:id
   if (req.method === "GET" && req.url.startsWith("/users/")) {
     const id = req.url.split("/")[2];
-
-    const users = getUsers();
-    // bcrypt logic must added to get user
 
     const user = users.find((u) => u._id === id);
 
@@ -47,9 +53,42 @@ const server = http.createServer(async (req, res) => {
       return res.end(JSON.stringify({ message: "User not found" }));
     }
 
-    return res.end(
-      JSON.stringify(user)
-    );
+    return res.end(JSON.stringify(user));
+  }
+
+  // PATCH /users/:id/role
+  if (req.method === "PATCH" && req.url.match(/^\/users\/[^\/]+\/role$/)) {
+    try {
+      const id = req.url.split("/")[2];
+      const body = await parseBody(req);
+      const { role } = body;
+
+      // Validate role
+      if (!["Admin", "HR", "Employee"].includes(role)) {
+        res.statusCode = 400;
+        return res.end(JSON.stringify({ message: "Invalid role" }));
+      }
+
+      const userIndex = users.findIndex((u) => u._id === id);
+
+      if (userIndex === -1) {
+        res.statusCode = 404;
+        return res.end(JSON.stringify({ message: "User not found" }));
+      }
+
+      users[userIndex].role = role;
+
+      res.statusCode = 200;
+      return res.end(
+        JSON.stringify({
+          message: "Role updated successfully",
+          user: users[userIndex],
+        })
+      );
+    } catch (error) {
+      res.statusCode = 400;
+      return res.end(JSON.stringify({ message: error }));
+    }
   }
 
   // POST /sign-in
