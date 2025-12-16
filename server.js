@@ -97,8 +97,6 @@ const server = http.createServer(async (req, res) => {
       const body = await parseBody(req);
       const { username, password } = body;
 
-      const users = getUsers();
-
       const user = users.find((u) => u.first_name === username);
 
       console.log();

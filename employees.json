@@ -358,5 +358,41 @@
     "user_name": "francesca.reed",
     "password": "$2b$10$iK6mxq6/Toegs0FzPY6h3OsgttYN1.hYo.MW3LfAmDeAP0WLCvA/K",
     "role": "Admin"
+  },
+  {
+    "_id": "987ff8cb-b506-4d5e-9166-ab8c644bb891",
+    "isRemoteWork": true,
+    "user_avatar": "snow.webp",
+    "first_name": "Jon",
+    "last_name": "Targaryen",
+    "first_native_name": "Jon",
+    "last_native_name": "Snow",
+    "middle_native_name": "KnowsNothing",
+    "department": "Web & Mobile",
+    "building": "Commander's Keep",
+    "room": "1404",
+    "date_birth": {
+      "year": 283,
+      "month": 1,
+      "day": 1
+    },
+    "desk_number": 1,
+    "manager": null,
+    "phone": "The raven systen #5",
+    "email": "john.crow@nightswatch.wf",
+    "skype": "live:.cid.21asd41jd1m132",
+    "cnumber": "C5336116",
+    "citizenship": "",
+    "visa": [
+      {
+        "issuing_country": "Freefolks",
+        "type": "National visa type D",
+        "start_date": 1652158800000,
+        "end_date": 1683608400000
+      }
+    ],
+    "user_name": "bastard",
+    "password": "$2a$12$mpKCmz53cz67hR5aYK6i4.ynxK1PXplBrOq7iNv2.Waw2vC4qk8qu",
+    "role": "Admin"
   }
 ]
